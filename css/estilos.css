@@ -32,17 +32,19 @@ body {
 .contenedor .contenido,
 .contenedor .sidebar,
 .contenedor .footer {
-	background: #fff;
+	background-image: radial-gradient(white, gray);
 	padding: 20px;
 	border-radius: 4px;
 }
 
 .contenedor .header {
-	background: #da6e03;
+	background-image: linear-gradient(#da6e03 , rgb(186, 0, 0));
 	color: #000;
 	grid-area: header;
     text-align: center;
 }
+
+
 
 
 .contenedor .contenido {
@@ -52,7 +54,7 @@ body {
 
 .contenedor .sidebar {
 	grid-column: 3 / 4;
-	background: gray;
+	background-image: radial-gradient(white, rgb(69, 69, 69));
 	text-align: center;
 	display: flex;
 	align-items: center;
@@ -68,7 +70,7 @@ body {
 
 .contenedor .widget-1,
 .contenedor .widget-2 {
-	background: #f3bf31;
+	background-image: radial-gradient(#ffd45f, orange);
 	color: #000;
 	height: 100px;
 	text-align: center;
@@ -86,8 +88,9 @@ body {
 }
 
 .contenedor .footer {
-	background: rgb(0, 217, 255);
+	background-image: linear-gradient(rgb(0, 217, 255) , rgb(207, 207, 255));
 	color: #000;
+	font-size: x-large;
     text-align: center;
 	grid-area: footer;
 	display: inline-block;
@@ -104,6 +107,42 @@ body {
 }
 
 
+.transformacion {
+	transform: rotateY(180deg);
+}
+
+.footer {
+	height: 130px;
+	transition: height 1s;
+}
+
+.footer:hover {
+	height: 150px;
+	background: cyan;
+}
+
+
+@keyframes aerografo {
+	from {
+		transform: rotateZ(180deg)
+	}
+	to {
+		transform: rotateZ(720deg)
+	}
+}
+ 
+.transformacion {
+	animation: aerografo;
+	animation-duration: 3s;
+	animation-delay: 1s;
+	animation-iteration-count: infinite;
+	
+}
+
+
+
+
+
 
 
 @media screen and (max-width: 768px){
@@ -115,7 +154,6 @@ body {
 						 "footer footer footer";
 	}
 }
-
 
 
 
