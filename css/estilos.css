@@ -1,0 +1,221 @@
+* {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+body {
+	background: rgb(36, 36, 36);
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+
+    
+}
+
+.contenedor {
+	width: 90%;
+	max-width: 1000px;
+	margin: 20px auto;
+	display: grid;
+	grid-gap: 20px;
+	grid-template-columns: repeat(3, 1fr);
+	grid-template-rows: repeat(4, auto);
+
+	grid-template-areas: "header header header"
+						 "contenido contenido sidebar"
+						 "widget-1 widget-2 sidebar"
+						 "footer footer footer";
+}
+
+.contenedor > div,
+.contenedor .header,
+.contenedor .contenido,
+.contenedor .sidebar,
+.contenedor .footer {
+	background: #fff;
+	padding: 20px;
+	border-radius: 4px;
+}
+
+.contenedor .header {
+	background: #da6e03;
+	color: #000;
+	grid-area: header;
+    text-align: center;
+}
+
+
+.contenedor .contenido {
+    color: #000;
+	grid-area: contenido;
+}
+
+.contenedor .sidebar {
+	grid-column: 3 / 4;
+	background: gray;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+	grid-area: sidebar;
+}
+
+.aero {
+    width: 300px;
+    height: 300px;
+}
+
+.contenedor .widget-1,
+.contenedor .widget-2 {
+	background: #f3bf31;
+	color: #000;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedor .widget-1 {
+	grid-area: widget-1;
+}
+
+.contenedor .widget-2 {
+	grid-area: widget-2;
+}
+
+.contenedor .footer {
+	background: rgb(0, 217, 255);
+	color: #000;
+    text-align: center;
+	grid-area: footer;
+	display: inline-block;
+	justify-content: space-around;
+}
+
+
+.a {
+	list-style: none;
+    color: black;
+	font-size: 1rem;
+    margin: 0 auto;
+    text-decoration: none;
+}
+
+
+
+
+@media screen and (max-width: 768px){
+	.contenedor {
+		grid-template-areas: "header header header"
+						 "contenido contenido contenido"
+						 "sidebar sidebar sidebar"
+						 "widget-1 widget-1 widget-2"
+						 "footer footer footer";
+	}
+}
+
+
+
+
+																		/* PAGINA AYUDA */
+
+
+
+
+
+																		/* PAGINA AEROGRAFIA */
+
+																		
+
+
+																		/* PAGINA CUADROS */
+
+
+.tony,
+.slash,
+.calaca {
+    margin: 0 auto;
+    width: 90%;
+    max-width: 500px;
+    max-height: 500px;
+    height: auto;
+    padding: 10px;
+}
+
+.tony,
+.slash,
+.calaca {
+    border-radius: 15px;
+}
+
+
+
+
+.contenedor .card-1,
+.contenedor .card-2,
+.contenedor .card-3 {
+	background: gray;
+	color: #000;
+	height: 350px;
+	text-align: center;
+	align-items: center;
+	justify-content: center;
+}
+
+
+
+																		/* PAGINA REDES */
+
+.contenedor .rojo {
+	background: rgb(255, 0, 0);
+}
+
+
+.contenedor .header {
+	background: #da6e03;
+	color: #000;
+	grid-area: header;
+    text-align: center;
+}
+
+.insta {
+    width: 100px;
+    height: 100px;
+}
+
+.contenedor .contenido {
+    color: #000;
+	grid-area: contenido;
+}
+
+.contenedor .sidebar {
+	grid-column: 3 / 4;
+	background: gray;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	min-height: 100px;
+	grid-area: sidebar;
+}
+
+
+.contenedor .logo-1,
+.contenedor .logo-2 {
+	background: #000;
+	height: 100px;
+	text-align: center;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.contenedor .logo-1 {
+	grid-area: widget-1;
+}
+
+.contenedor .logo-2 {
+	grid-area: widget-2;
+}
